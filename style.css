@@ -39,6 +39,7 @@ body {
   border-radius: 50%;
   position: relative;
   transition: transform 0.5s linear;
+  box-shadow: 1px 1px 88px #6c0505;
 }
 
 .container.show-nav .circle {
@@ -128,11 +129,8 @@ nav a:hover {
     border: 20px solid #ec1414;
     margin: 100px auto;
     border-radius: 50%;
-    box-shadow: 1px 1px 68px #6c0505;
-    /* box-shadow: 1px 1px 68px inset #6c0505; */
+    box-shadow: 1px 1px 88px #6c0505;
 }
-.main-content img {
-    position: absolute;
-    top: 170px;
-    left: 550px;
+.content img {
+    margin-left: -10%;
 }
