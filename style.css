@@ -127,10 +127,22 @@ nav a:hover {
     width: 400px;
     height: 400px;
     border: 20px solid #ec1414;
-    margin: 100px auto;
+    margin: 50px auto;
     border-radius: 50%;
     box-shadow: 1px 1px 88px #6c0505;
 }
 .content img {
     margin-left: -10%;
+}
+.footer {
+  color: white;
+  margin-top: 5%;
+}
+.name-box {
+  text-align: right;
+  color: #4c2727;
+  line-height: 5px;
+}
+span {
+  color: #ec1414;
 }
