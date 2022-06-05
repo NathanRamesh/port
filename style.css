@@ -99,11 +99,13 @@ header p {
 }
 
 /* Social media */
-
+.social-media {
+  margin: 100px 20%;
+}
 .social-media ul {
   transform:translate(-50%, -50%);
-  margin-left: 25%;
-  margin-top: 10%;
+  /* margin-left: 30%;
+  margin-top: 20%; */
 }
 
 .social-media ul li {
@@ -224,6 +226,7 @@ header p {
   border-radius: 10px;
   text-decoration: none;
   padding: 10px 30px;
+  margin: 50px auto;
 }
 
 .glow-on-hover:before {
