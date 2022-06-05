@@ -19,9 +19,9 @@ function checkBoxes() {
 }
 
 function pdf(){
-    Swal.fire(
-        'Added!',
-        'Your data has been Added.',
-        'success'
-    )
+ 
+    $.sweetModal({
+        content: 'This is a success.',
+        icon: $.sweetModal.ICON_SUCCESS
+    });
 }

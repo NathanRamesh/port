@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="sweet-modal/dist/min/jquery.sweet-modal.min.css" />
+    <script src="sweet-modal/dist/min/jquery.sweet-modal.min.js"></script>
     <title>Rotating Navigation</title>
   </head>
   <body>
@@ -20,73 +22,143 @@
         <h2><span>Rajakrishnan</span></h2>
         <h2>&emsp; Kalaichelvan</h2>
      </div>
-      <div class="social-media">
-        <style>
-          @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
-          </style>
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </li>
-      </div> 
+
     </header>
 
-            <div class="main-content">
-              <div class="typewriter">
-                <h5>My teaching process of art imparts the knowledge of art rather than skill. The process tends students to understand the knowledge about art subsequently the way they perceive their life and inspirations. I myself along with the students appreciate the idea of experimentation. Make them to travel through traditional till contemporary. Art practicing through a different medium is just an ability, video mapping, stop motion photography, technology arts are some tools. Innovations being the synopsis of the teaching methodology I believe in, I persuade the students to do the same and will.</h5>
-              </div>
-                <div class="content">
-                    <img src="image/profile.png" alt="profile">
-                    <div class="designation">
-                      <h2>International Visual</h2>
-                      <h4>Art <span>  Teacher</span></h4>
-                    </div>
-                    <a href="#" onclick="pdf()">Click me</a> 
-                </div>        
-            </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="typewriter">
+            <h5>My teaching process of art imparts the knowledge of art rather than skill. The process tends students to understand the knowledge about art subsequently the way they perceive their life and inspirations. I myself along with the students appreciate the idea of experimentation. Make them to travel through traditional till contemporary. Art practicing through a different medium is just an ability, video mapping, stop motion photography, technology arts are some tools. Innovations being the synopsis of the teaching methodology I believe in, I persuade the students to do the same and will.</h5>
+          </div>
+          <div class="social-media">
+            <style>
+              @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+              </style>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+          </div> 
+          <a class="glow-on-hover" type="button" href="E:\HTML\port-main\Rajakrishnan Kalaichelvan.pdf" target="new">Resume</a> 
+        </div>
+        <div class="col-md-5">
+          <div class="main-content">
+              
+            <div class="content">
+                <img src="image/profile.png" alt="profile">
+                <div class="designation">
+                  <h2>International Visual</h2>
+                  <h4>Art <span>  Teacher</span></h4>
+                </div> 
+            </div>     
+        </div>
+        </div>
+      </div>
+    </div>
 
     <nav>
       <ul>
-        <li><a href="#"> Home</a></li>
-        <li><a href="#"> About</a></li>
-        <li><a href="#"> Contact</a></li>
+        <li><a href="#first"> Home</a></li>
+        <li><a href="#second"> Portfolio</a></li>
+        <li><a href="#third"> Contact</a></li>
       </ul>
     </nav>
     <div class="container-fluid">
       <div class="row">
-        <div class="box">
-          <i class="fa fa-pencil bg-white"></i>
-          <img src="image/pencil-1.jpg" alt="pencil-1">
-          <div class="recent-work-imgcontent">
-              <h3><a href="#">STATIONARY</a></h3>
-              <p><a href="#">A yellow pencil envelopes on a clean, blue backdrop!</a> </p>
-          </div>
+        <div class="box slider" id="first">
+          <ul>
+            <li>
+              <span>New York</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/new_york_city_2-wallpaper-960x540_zpsce336d7f.jpg' /></a>
+            </li>
+          
+            <li>
+              <span>London</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/london_in_black_and_white-wallpaper-960x540_zpsa7fa9d45.jpg' /></a>
+            </li>
+          
+            <li>
+              <span>Poznań</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/poznan_poland-wallpaper-960x540_zps6a5470ed.jpg' /></a>
+            </li>
+          
+            <li>
+              <span>Chicago</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/cityscape_skyline_chicago_sculpture-wallpaper-960x540_zps19c2d09d.jpg' /></a>
+            </li>
+          
+          </ul>
+          
         </div>
-        <div class="box">
-          <img src="image/pencil-2.jpg" alt="pencil-2">
-                    <div class="recent-work-imgcontent">
-                        <h3><a href="#">ICE CREAM</a></h3>
-                        <p><a href="#">A  dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</a> </p>
-                    </div>
+        <div class="box slider"id="second">
+          <ul>
+            <li>
+              <span>New York</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/new_york_city_2-wallpaper-960x540_zpsce336d7f.jpg' /></a>
+            </li>
+          
+            <li>
+              <span>London</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/london_in_black_and_white-wallpaper-960x540_zpsa7fa9d45.jpg' /></a>
+            </li>
+          
+            <li>
+              <span>Poznań</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/poznan_poland-wallpaper-960x540_zps6a5470ed.jpg' /></a>
+            </li>
+          
+            <li>
+              <span>Chicago</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/cityscape_skyline_chicago_sculpture-wallpaper-960x540_zps19c2d09d.jpg' /></a>
+            </li>
+          
+          </ul>
+          
         </div>
-        <div class="box">
-          <img src="image/second-banner.jpg" alt="second-banner">
-                    <div class="recent-work-imgcontent">
-                        <h3><a href="#">WORKSPACE</a></h3>
-                        <p><a href="#">A yellow workspace with some scissor, pencil, and other objects.</a> </p>
-                    </div>
+        <div class="box slider" id="third">
+          <ul>
+            <li>
+              <span>New York</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/new_york_city_2-wallpaper-960x540_zpsce336d7f.jpg' /></a>
+            </li>
+          
+            <li>
+              <span>London</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/london_in_black_and_white-wallpaper-960x540_zpsa7fa9d45.jpg' /></a>
+            </li>
+          
+            <li>
+              <span>Poznań</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/poznan_poland-wallpaper-960x540_zps6a5470ed.jpg' /></a>
+            </li>
+          
+            <li>
+              <span>Chicago</span>
+              <a href=""><img src='http://i1276.photobucket.com/albums/y465/gaeowyn/cityscape_skyline_chicago_sculpture-wallpaper-960x540_zps19c2d09d.jpg' /></a>
+            </li>
+          
+          </ul>
+          
         </div>
         <!-- <div class="box"><h2>Content</h2></div>
         <div class="box"><h2>Content</h2></div>

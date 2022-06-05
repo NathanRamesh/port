@@ -61,11 +61,7 @@ nav a:hover {
     border-radius: 50%;
     box-shadow: 1px 1px 88px #6c0505;
 }
-.content img {
-    margin-left: -10%;
-    border-bottom-right-radius: 300px;
-    position: relative;
-}
+
 .name-box {
   color: #9b2424;
   line-height: 5px;
@@ -80,10 +76,15 @@ span {
 .main-content {
   color: white;
   display: flex;
+  margin-bottom: 2%;
 }
 .typewriter {
-  width: 50%;
-  padding: 30px;
+  color: #fff;
+}
+.content img {
+  margin-left: -10%;
+  border-bottom-right-radius: 300px;
+  position: relative;
 }
 .designation {
   position: absolute;
@@ -96,27 +97,19 @@ header p {
   padding: 10px;
   margin: 0 20px;
 }
-.social-media {
-  /* display: inline;
-  margin-left: auto;
-  margin-right: 30px; */
-}
 
 /* Social media */
 
 .social-media ul {
-  position:absolute;
-  top: 62%;
-  left: 23%;
   transform:translate(-50%, -50%);
-  display:flex;
-  margin:0;
-  padding:0;
+  margin-left: 25%;
+  margin-top: 10%;
 }
 
 .social-media ul li {
   list-style:none;
-  margin: 50px 50px;
+  margin: 20px 20px;
+  display: inline-block;
 }
 
 .social-media ul li a .fa {
@@ -218,6 +211,70 @@ header p {
 }
 
 
+.glow-on-hover {
+  width: 120px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+  color: #fff;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+  color: #fff;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
 /* box content */
 
 .box {
@@ -244,4 +301,98 @@ header p {
 
 .box h2 {
   font-size: 45px;
+}
+
+/* slider  */
+.slider {
+  border: 5px solid #ec1414;
+  box-shadow: 1px 1px 8px #6c0505;
+}
+.slider ul {
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  margin: auto;
+  list-style: none;
+  width: 100%;
+  height: 450px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px 1px;
+  padding-left: 0;
+}
+
+.slider li {
+  position: relative;
+  width: 20%;
+  height: 450px;
+  float: left;
+  border-left: 1px solid white;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+  box-shadow: -2px 0 10px 2px;
+}
+
+.slider ul li:first-child {
+  border: none;
+  padding-left: 0px;
+}
+
+.slider span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  color: white;
+  white-space: nowrap;
+  padding: 20px;
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, rgba(0, 0, 0, 0.65)),
+    color-stop(100%, rgba(0, 0, 0, 0))
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.slider img {
+  width: 950px;
+  height: 450px;
+}
+
+.slider ul:hover li {
+  width: 13%;
+}
+
+.slider ul li:hover {
+  width: 50%;
 }
