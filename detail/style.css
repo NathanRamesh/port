@@ -41,6 +41,14 @@ body {
   position: relative;
   display: flex;
   margin: 50px auto;
+
+}
+embed {
+  /* margin: 0px 20%; */
+  margin-top: -50px;
+  border: none;
+  padding-bottom: 50px;
+  border-bottom: 10px solid #ff3814;
 }
 .section .left, .section .middle, .section .right {
   width: 100%;

@@ -1,27 +1,31 @@
-const boxes = document.querySelectorAll('.box')
+// const boxes = document.querySelectorAll('.box')
 
-window.addEventListener('scroll', checkBoxes)
+// window.addEventListener('scroll', checkBoxes)
 
-checkBoxes()
+// checkBoxes()
 
-function checkBoxes() {
-    const triggerBottom = window.innerHeight / 5 * 4
+// function checkBoxes() {
+//     const triggerBottom = window.innerHeight / 5 * 4
 
-    boxes.forEach(box => {
-        const boxTop = box.getBoundingClientRect().top
+//     boxes.forEach(box => {
+//         const boxTop = box.getBoundingClientRect().top
 
-        if(boxTop < triggerBottom) {
-            box.classList.add('show')
-        } else {
-            box.classList.remove('show')
-        }
-    })
-}
+//         if(boxTop < triggerBottom) {
+//             box.classList.add('show')
+//         } else {
+//             box.classList.remove('show')
+//         }
+//     })
+// }
 
-function pdf(){
- 
-    $.sweetModal({
-        content: 'This is a success.',
-        icon: $.sweetModal.ICON_SUCCESS
-    });
-}
+
+
+const left = document.querySelector('.left')
+const right = document.querySelector('.right')
+const container = document.querySelector('.xbox')
+
+left.addEventListener('mouseenter', () => container.classList.add('hover-left'))
+left.addEventListener('mouseleave', () => container.classList.remove('hover-left'))
+
+right.addEventListener('mouseenter', () => container.classList.add('hover-right'))
+right.addEventListener('mouseleave', () => container.classList.remove('hover-right'))
