@@ -18,6 +18,9 @@
     <title>Rotating Navigation</title>
   </head>
   <body id="body">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
     <header>
       <div class="name-box">
         <h2><span>Rajakrishnan</span></h2>
@@ -33,54 +36,28 @@
           <div class="typewriter">
             <h5>My teaching process of art imparts the knowledge of art rather than skill. The process tends students to understand the knowledge about art subsequently the way they perceive their life and inspirations. I myself along with the students appreciate the idea of experimentation. Make them to travel through traditional till contemporary. Art practicing through a different medium is just an ability, video mapping, stop motion photography, technology arts are some tools. Innovations being the synopsis of the teaching methodology I believe in, I persuade the students to do the same and will.</h5>
           </div>
-          
-          <!-- <a class="glow-on-hover" type="button" href="Rajakrishnan Kalaichelvan.pdf" target="new">Resume</a>  -->
 
-         
-          <div class="second-right-wrapper">
-            <div>
-              <i class="fa fa-desktop"> Teaching</i>
-              <ul>
-                  <li class="background-1">90%</li>
-              </ul>
-          </div>
-            <div>
-                <i class="fa fa-camera"> Photography</i>
-                <ul>
-                    <li class="background">85%</li>
-                </ul>
-             </div>
-             
-            <div>
-              <i class="fa fa-picture-o"> Photoshop</i>
-              <ul>
-                <li class="background-2">75%</li>
-            </ul>
-            </div>
-        </div>
         <div class="social-media">
           <style>
             @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
             </style>
             <ul>
               <li>
-                <a href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="https://rajaartoys.wixsite.com/arteducator">
+                  <i class="fa fa-user" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <i class="fa fa-phone" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
+                <a href="https://www.instagram.com/raja_rockey/">
                   <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>
-              
-            </ul>
-            
+              <li>
+                <a href="https://wa.me/8754079928">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul> 
         </div> 
         </div>
         <div class="col-md-5">
@@ -102,44 +79,88 @@
       <ul>
         <li><a href="#body"> Home</a></li>
         <li><a href="#port"> Portfolio</a></li>
+        <li><a href="#resume"> Resume</a></li>
         <li><a href="#contact"> Contact</a></li>
       </ul>
     </nav>
     <div class="xbox" id="port">
+      <h2 class="text-white text-center p-3">PORTFOLIO</h2>
       <div class="split left">
-        <h1>Middle class</h1>
+        <h1>Middle School</h1>
         <a href="detail/index.html" class="btn">Explore</a>
       </div>
       <div class="split right">
-        <h1>High class</h1>
+        <h1>High School</h1>
         <a href="#" class="btn">Explore</a>
       </div>
     </div>
-    <embed src="Rajakrishnan Kalaichelvan.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=187" type="application/pdf" width="100%" height="380px" />
+    <div class="container-fluid" id="resume">
+      <h2 class="text-white text-center p-4">RESUME</h2>
+      <div class="row resume">
+        <div class="col-md-6">
+          <a href="Rajakrishnan Kalaichelvan.pdf"><img src="image/Resume-page-1.jpg" alt="Resume"></a>
+        </div>
+        <div class="col-md-6">
+          <a href="Rajakrishnan Kalaichelvan.pdf"><img src="image/Resume-page-2.jpg" alt="Resume"></a>
+        </div>
+      </div>
+    </div>
+    
 
     <div class="container-fluid" id="contact">
       <div class="row">
         <div class="third-wrapper">
           <h2>CONTACT</h2>
-          <h4>Lets get in touch. Send us a message:</h4>
           <div class="contact">
               <p><i class="fa fa-map-marker"></i> Dubai, UAE</p>
               <p><i class="fa fa-phone"></i> Phone: +971 552363284</p>
               <p><i class="fa fa-envelope"></i> Email: raja.artoys@gmail.com </p>
           </div>
-          <form action="submit">
-              <input type="text" placeholder="Name">
-              <input type="email" placeholder="Email">
-              <input type="text" placeholder="Subject">
-              <input type="text" placeholder="Message">
-              <button class="sub-btn"><i class="fa fa-paper-plane-o"></i>SEND MESSAGE</button>
-          </form>
+          <form method="post" name="Form" onsubmit="sendEmail(); return false">
+
+            <input type="Email"  id="sender" placeholder="sender123@gmail.com"><br>
+    
+            <input type="text"  id="message" placeholder="Enter the Message"><br>
+
+            <input type="number" id="number" placeholder="Enter your phone number" maxlength="10">
+
+            <button type="submit">Send</button>
+    
+        </form>
       </div>
       <footer>
         <i class="fa fa-copyright">&emsp; Rajakrishnan</i>
       </footer>
       </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+  
+  Email.send({
+
+  Host : "smtp.gmail.com",
+
+  Username : "nathanramesh06@gmail.com",
+
+  Password : "Nimble@1234",
+
+  To : "nathanramesh06@gmail.com",
+
+  From : document.getElementById('sender').value,
+
+  Subject : document.getElementById('message').value,
+
+  Body : document.getElementById('number').value,
+
+  }).then(function (message) {
+
+  alert("Email sent successfully")
+
+  });
+
+}
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
