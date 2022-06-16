@@ -20,29 +20,3 @@ right.addEventListener('mouseleave', () => container.classList.remove('hover-rig
 
 
 
-function sendEmail() {
-  
-  
-    Email.send({
-  
-    Host: "smtp.gmail.com",
-  
-    Username: 'nathanramesh06@gmail.com',
-  
-    Password: 'Nimble@1234',
-  
-    To: 'nathanramesh05@gmail.com',
-  
-    From: document.getElementById('sender').value,
-  
-    Subject: document.getElementById('message').value,
-  
-    Body: document.getElementById('number').value,
-  
-    }).then(function (message) {
-  
-    alert("Email sent successfully")
-  
-    });
-  
-  }
